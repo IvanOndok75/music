@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script>
+export default{
+    name:"Header"
+}
+</script>
+
 <style scoped>
 div {
     background-color: #dd3489ff;
