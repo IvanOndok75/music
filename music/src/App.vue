@@ -1,14 +1,19 @@
 <template>
-<Header/>
+<div>
+<MyHeader/>
+<MyMusic/>
+</div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import MyHeader from './components/MyHeader.vue'
+import MyMusic from './components/MyMusic.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
+    MyHeader,
+    MyMusic,
   }
 }
 </script>
