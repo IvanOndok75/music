@@ -14,7 +14,7 @@
   <h3>weffw</h3>
   </section>
   <section class="m4">
-   <img alt="music player" src="https://www.iconarchive.com/download/i31955/thiago-silva/palm/Music.256.png">
+   <img alt="music player" src="https://th.bing.com/th/id/R.a39718a19898f4779ed53acdac20f038?rik=BhU5Gtunu24DrQ&riu=http%3a%2f%2ficons.iconseeker.com%2fpng%2ffullsize%2fnext-series%2fmy-music-3.png&ehk=jc00dmkrtwpzqgf1qWGF4dIMnxdXm6L3DBrh%2bAsZlT8%3d&risl=&pid=ImgRaw&r=0">
    <h3>ewfwf</h3>
    </section>
    <section class="m5">
@@ -32,12 +32,22 @@ export default{
 
 <style scoped>
 section {
-    margin: 17px;
+    margin: 15px;
     align-items: center;
+    border: solid 2px #fff;
+    box-shadow: 0 4px 8px #fff;
+    translition: transform 0,3s ease;
+    color: #d5b3e6b4;
+}
+section:hover{
+transform: scale(1,1.075);
 }
 div {
     display: flex;
     background-color: #dd3489ff;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     
 }
 img {
@@ -50,6 +60,24 @@ h2 {
   text-align: center;
   color: #2c0509ff;
   margin: 20px;
+  position: relative;
+  display: inline block;
+  animation: moveLine linear infinite;
 }
+@keyframes moveLine {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+h3{
+  color: #2c0509ff;
+}
+
 
 </style>
