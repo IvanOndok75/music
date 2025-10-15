@@ -1,19 +1,12 @@
 <template>
 <div>
-  <h1>Retro Music Player</h1>
-  <nav>
-   <router-link to="/admin/music" active-class="active-link">music</router-link>
-      <router-link to="/admin/favorites" active-class="active-link">favorites</router-link>
-  </nav>
-  <main>
-      <router-view />
-    </main>
+  <h1>My favorite music</h1>
   </div>
 </template>
 
 <script>
 export default{
-    name:"MyHeader"
+    name:"MyFav"
 }
 </script>
 
