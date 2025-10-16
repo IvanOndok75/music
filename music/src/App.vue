@@ -1,25 +1,29 @@
 <template>
-<div>
-<router-view/>
-</div>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
+import { reactive, provide } from 'vue'
 
 export default {
-  name: 'App',
   components: {
+  },
+  setup() {
+    const favoriteSongs = reactive([])
+
+    function toggleFavorite(song) {
+      const index = favoriteSongs.findIndex(s => s.id === song.id)
+      if (index === -1) {
+        favoriteSongs.push(song)
+      } else {
+        favoriteSongs.splice(index, 1)
+      }
+    }
+
+    provide('favoriteSongs', favoriteSongs)
+    provide('toggleFavorite', toggleFavorite)
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

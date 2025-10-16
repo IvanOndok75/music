@@ -9,7 +9,7 @@ const routes = [
     component: MyHeader,
     children: [
       { path: '', component: MyMusic },
-      { path: 'reviews', component: MyFav },
+      { path: 'favorites', component: MyFav },
     ],
   },
   {
@@ -25,5 +25,7 @@ const router = createRouter({
   history: createWebHistory('/music/'),
   routes,
 });
+
+
 
 export default router;
