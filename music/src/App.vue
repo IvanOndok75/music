@@ -1,19 +1,14 @@
 <template>
 <div>
-<MyHeader/>
-<MyMusic/>
+<router-view/>
 </div>
 </template>
 
 <script>
-import MyHeader from './components/MyHeader.vue'
-import MyMusic from './components/MyMusic.vue'
 
 export default {
   name: 'App',
   components: {
-  MyHeader,
-  MyMusic,
   }
 }
 </script>

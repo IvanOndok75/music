@@ -12,8 +12,7 @@ const routes = [
       { path: 'reviews', component: MyFav },
     ],
   },
-
-{
+  {
     path: '/admin',
     component: MyHeader,
     children: [
