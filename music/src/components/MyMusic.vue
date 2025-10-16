@@ -56,6 +56,7 @@ div {
 }
 img {
   width: 235px;
+  height: 235px;
 }
 h2 {
   background-color: #dd3489ff;
@@ -66,7 +67,7 @@ h2 {
   animation: moveLine linear infinite;
 }
 .star-btn {
-  font-size: 24px;
+  font-size: 32px;
   border: none;
   background: transparent;
   cursor: pointer;
