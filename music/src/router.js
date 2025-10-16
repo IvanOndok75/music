@@ -4,6 +4,14 @@ import MyMusic from './components/MyMusic.vue';
 import MyFav from './components/MyFav.vue';
 
 const routes = [
+  {
+    path: '/',
+    component: MyHeader,
+    children: [
+      { path: '', component: MyMusic },
+      { path: 'reviews', component: MyFav },
+    ],
+  },
 
 {
     path: '/admin',

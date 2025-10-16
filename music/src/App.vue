@@ -12,8 +12,8 @@ import MyMusic from './components/MyMusic.vue'
 export default {
   name: 'App',
   components: {
-    MyHeader,
-    MyMusic,
+  MyHeader,
+  MyMusic,
   }
 }
 </script>
