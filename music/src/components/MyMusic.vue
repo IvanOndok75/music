@@ -2,9 +2,7 @@
   <h2>Music List</h2>
   <div>
     <section v-for="song in songs" :key="song.id">
-      <img :src="song.image" :alt="song.title" />
-      <h3>{{ song.title }}</h3>
-      <button 
+    <button 
         class="star-btn" 
         :class="{ active: isFavorite(song) }" 
         @click="toggleFavorite(song)"
@@ -12,6 +10,8 @@
       >
         ★
       </button>
+      <img :src="song.image" :alt="song.title" />
+      <h3>{{ song.title }}</h3>
       <button 
         class="play-btn"
         @click="togglePlay(song)"
@@ -69,7 +69,6 @@ audio.addEventListener('ended', () => {
 <style scoped>
 section {
   margin: 15px;
-  align-items: center;
   border: solid 2px #fff;
   box-shadow: 0 4px 8px #fff;
   transition: transform 0.3s ease;
@@ -83,20 +82,17 @@ section:hover {
 }
 div {
   display: flex;
-  background-color: #dd3489ff;
+  background-color: #f143a3ff;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  height: 100%;
+  padding:0px;
 }
 img {
   width: 235px;
   height: 235px;
-  object-fit: cover;
 }
 h2 {
-  background-color: #dd3489ff;
+  background-color: #f7077fff;
   text-align: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c0509ff;
@@ -109,14 +105,27 @@ h2 {
   background: transparent;
   cursor: pointer;
   color: gray;
-  margin-top: 10px;
+  margin-top: 5px;
+  right: 10px;
+  margin-left: auto;
   transition: color 0.3s ease;
 }
 .star-btn.active {
   color: gold;
 }
+.star-btn:hover {
+  transform: scale(1, 1.15);
+}
 .play-btn:hover {
   color: #2c0509ff;
+}
+.play-btn{
+  font-size: 30px;
+  align-items: center;
+  margin-left: 0%;
+  border: solid 2px #fff;
+  box-shadow: 0 4px 8px #fff;
+
 }
 @keyframes moveLine {
   0% {

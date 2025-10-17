@@ -19,7 +19,6 @@ export default {
   setup() {
     const favoriteSongs = inject('favoriteSongs')
 
-    // Захист від undefined
     if (!favoriteSongs) {
       console.warn('favoriteSongs is not provided')
       return { favoriteSongs: [] }
@@ -36,6 +35,9 @@ export default {
 }
 img {
   width: 150px;
+}
+h1{
+  background-color: #f80959ff;
 }
 </style>
 
