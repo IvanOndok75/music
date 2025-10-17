@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <router-view />
+    <MyFooter/>
   </div>
 </template>
 
 <script>
 import { reactive, provide } from 'vue'
+import MyFooter from './components/MyFooter.vue'
 
 export default {
   components: {
+    MyFooter
   },
   setup() {
     const favoriteSongs = reactive([])

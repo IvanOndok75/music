@@ -30,11 +30,11 @@ const favoriteSongs = inject('favoriteSongs')
 const toggleFavorite = inject('toggleFavorite')
 
 const songs = [
-  { id: 1, title: "Around The world", image: "https://openclipart.org/image/800px/221020", audio: "/audio/ATC.mp3" },
-  { id: 2, title: "Headlock", image: "https://th.bing.com/th/id/R.d7dd540a725624650187f30e6e40e565?rik=voVDu6aq3bQQ4w&riu=http%3a%2f%2fwww.rw-designer.com%2ficon-image%2f2448-256x256x32.png", audio: "/audio/Headlock.mp3" },
-  { id: 3, title: "YWHIRMY", image: "https://th.bing.com/th/id/R.7617e85831e8d6d29fe3ea10edb0514a?rik=d%2fn674kTaDKKzQ&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2009%2f06%2fcool-folder-icons-windows-7_156646.png", audio: "/audio/member.mp3" },
-  { id: 4, title: "Dreamspace", image: "https://th.bing.com/th/id/R.a39718a19898f4779ed53acdac20f038?rik=BhU5Gtunu24DrQ&riu=http%3a%2f%2ficons.iconseeker.com%2fpng%2ffullsize%2fnext-series%2fmy-music-3.png", audio: "/audio/009.mp3" },
-  { id: 5, title: "Stereo Love", image: "https://www.shareicon.net/data/2015/05/29/45717_music_256x256.png", audio: "/audio/love.mp3" },
+  { id: 1, title: "Around The world", image: "/png/R.png", audio: "/audio/ATC.mp3" },
+  { id: 2, title: "Headlock", image: "/png/h.png", audio: "/audio/Headlock.mp3" },
+  { id: 3, title: "YWHIRMY", image: "/png/R1.png", audio: "/audio/member.mp3" },
+  { id: 4, title: "Dreamspace", image: "/png/as.png", audio: "/audio/009.mp3" },
+  { id: 5, title: "Stereo Love", image: "/png/123.png", audio: "/audio/love.mp3" },
 ]
 
 const audio = new Audio()
@@ -96,7 +96,7 @@ h2 {
   text-align: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c0509ff;
-  margin: 20px;
+  padding: 5px;
   animation: moveLine linear infinite;
 }
 .star-btn, .play-btn {

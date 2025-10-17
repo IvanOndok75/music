@@ -2,8 +2,8 @@
 <div>
   <h1>Retro Music Player</h1>
   <nav>
-   <router-link to="/admin/music" active-class="active-link">music     </router-link>
-      <router-link to="/admin/favorites" active-class="active-link">      favorites</router-link>
+   <router-link to="/admin/music" active-class="active-link">Music     </router-link>
+      <router-link to="/admin/favorites" active-class="active-link">     Favorites</router-link>
   </nav>
   <main>
       <router-view />
@@ -40,9 +40,18 @@ html, body {
   box-sizing: border-box;
 }
 nav{
-  padding: 5px;
+  padding: 10px;
+}
+nav a{
+  margin-top: 10px;
+  padding: 20px 5px 5px 0px;
   font-size: 30px;
   text-decoration: none;
+  color: #2c0509ff;
+  transition: color 0.3s ease;
+}
+nav:hover{
+  transform: scale(1, 1.15);
 }
 
 
